@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package player;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "demo/playerpb";
+
+
+message Player {
+    int32 id = 1;
+    string name = 2;
+    int32 score = 3;
+    string badge = 4;
+    string nickname = 5;
+    Address address = 6;
+    google.protobuf.Timestamp joined_at = 7;
+}
+
+message Address {
+    string street = 1;
+    string locality = 2;
+    string city = 3;
+    string country = 4;
+    int32 country_code = 5;
+}
