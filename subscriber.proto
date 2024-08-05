@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package subscriber;
+
+message Subscriber {
+    string name = 1;
+    int32 age = 2;
+    string functions = 3;
+    Subscription subs = 4;
+}
+
+message Subscription {
+    int32 price = 1;
+    string license = 2;
+}
