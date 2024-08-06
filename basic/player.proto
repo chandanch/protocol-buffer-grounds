@@ -24,3 +24,4 @@ message Address {
     string country = 4;
     int32 country_code = 5;
 }
+

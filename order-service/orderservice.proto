@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package orderservice;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "dist/pb";
+
+message Order {
+    int32 order_id =  1;
+    google.protobuf.Timestamp order_time = 2;
+}
+
+message Meal {
+    Entree  entree  =   1;
+    Drink drink = 2;
+}
+
+message Entree {
+    string food = 1;
+}
+
+message Drink {
+    string name = 1;
+}
+
+message Fil {
+    
+}
