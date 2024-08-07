@@ -31,3 +31,11 @@ message Side {
     string type = 1;
     repeated string notes = 2;
 }
+
+enum Size {
+    Size_UNSPECIFIED = 0;
+    Size_SMALL = 1;
+    Size_MEDIUM = 2;
+    Size_LARGE = 3;
+    
+}
