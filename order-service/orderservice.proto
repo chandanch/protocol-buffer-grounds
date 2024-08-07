@@ -21,21 +21,24 @@ message Meal {
 message Entree {
     string food = 1;
     repeated string notes = 2;
+    Size size = 3;
 }
 
 message Drink {
     string name = 1;
+    Size size = 2;
 }
 
 message Side {
     string type = 1;
     repeated string notes = 2;
-}
+    Size size = 3;
+}  
 
 enum Size {
     Size_UNSPECIFIED = 0;
     Size_SMALL = 1;
     Size_MEDIUM = 2;
     Size_LARGE = 3;
-    
+
 }
