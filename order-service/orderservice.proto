@@ -14,16 +14,19 @@ message Order {
 message Meal {
     Entree  entree  =   1;
     Drink drink = 2;
+    repeated Side sides = 3;
 }
 
 message Entree {
     string food = 1;
+    repeated string notes = 2;
 }
 
 message Drink {
     string name = 1;
 }
 
-message Fil {
-    
+message Side {
+    string type = 1;
+    repeated string notes = 2;
 }
