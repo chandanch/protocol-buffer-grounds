@@ -9,6 +9,7 @@ option go_package = "dist/pb";
 message Order {
     int32 order_id =  1;
     google.protobuf.Timestamp order_time = 2;
+    map<string, Meal> meal = 3;
 }
 
 message Meal {
