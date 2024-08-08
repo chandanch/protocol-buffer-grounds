@@ -1,5 +1,6 @@
-from orderservice_pb2 import Meal, Order, Entree, Drink, Side, Size
-from google.protobuf.timestamp_pb2 import Timestamp
+from orderservice_pb2 import Order, Size
+
+# from google.protobuf.timestamp_pb2 import Timestamp
 from google.protobuf.json_format import MessageToJson
 import datetime
 import sys
