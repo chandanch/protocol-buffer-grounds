@@ -48,5 +48,5 @@ protobuf.load('../order-service/orderservice.proto').then((root) => {
 	// de-serialize the message - reconstitute into an object
 	console.log('De-Serialized Message:');
 	const order2 = Order.decode(encodedMessage);
-	console.log(order2.toJSON(order2));
+	console.log(Order.toObject(order2));
 });
